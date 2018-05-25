@@ -1,0 +1,67 @@
+body{
+	
+background-color:lightgoldenrodyellow;
+ font-style: italic;
+}
+a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+button{
+    margin-left: 20px;
+    color: blue;
+    text-decoration: none;
+}
+.intro{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 55px;
+    margin-left: 25%;
+    margin-right: 25%;   
+    margin-top: 10%;
+}
+.quotediv{
+     margin-left: 25%;
+    margin-right: 25%;   
+    color: red;
+    text-align: justify;
+    height:7%;
+}
+p{
+    text-indent: 15px;
+}
+footer{
+    margin-top:100px;
+}
+.hyperlinks{
+    margin-top:2%; 
+}
+
+h3{
+   margin-left: 40% ;
+color: orchid;
+}
+img{
+    height: 100px;
+    widows: 50px;
+}
+tr{
+    padding-bottom: 30px;
+    padding-left: 30px;
+      
+}
+td{
+    padding: 20px;
+}
+.hint{
+ color: red; 
+ margin-left: 30%;  
+
+}
+ul{
+    list-style-type: none;
+            
+}
