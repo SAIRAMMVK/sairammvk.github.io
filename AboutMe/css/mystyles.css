@@ -1,6 +1,5 @@
 body{
-	
-background-color:lightgoldenrodyellow;
+background-image: url("./images/backgrnd.jpeg");
  font-style: italic;
 }
 a{
@@ -21,7 +20,7 @@ button{
     text-indent: 55px;
     margin-left: 25%;
     margin-right: 25%;   
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .quotediv{
      margin-left: 25%;
@@ -49,7 +48,7 @@ img{
     widows: 50px;
 }
 tr{
-    padding-bottom: 30px;
+    
     padding-left: 30px;
       
 }
@@ -64,4 +63,29 @@ td{
 ul{
     list-style-type: none;
             
+}
+h3 span{
+    border: 4px dashed seagreen;
+    padding : 12px;
+    float: center;
+}
+table selected
+{
+    color: red;
+}
+.channels-facebook{
+    float: left;
+    margin-left: 30%;
+    border: 2px solid lightcoral;
+    background-color: lightblue;
+}
+.channels-youtube
+{
+    float: right;
+    margin-right: 30%;
+    border: 2px solid lightcoral;
+    background-color: lightblue;
+}
+h2{
+    text-align: center;
 }
