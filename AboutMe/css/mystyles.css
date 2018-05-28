@@ -1,10 +1,17 @@
 body{
-background-image: url("./images/backgrnd.jpeg");
+
  font-style: italic;
 }
 a{
     text-decoration: none;
     margin-left: 20px;
+    
+}
+div .social-links{
+    align-items: center;
+}
+a:hover{
+    color:red;
 }
 button{
     margin-left: 20px;
@@ -28,6 +35,20 @@ button{
     color: red;
     text-align: justify;
     height:7%;
+}
+#profile{
+    float: right;
+    
+    width: 150px;
+
+}
+#facebook{
+    width: 140px;
+    height: 100px;
+}
+#github{
+    width: 200px;
+    height: 100px;
 }
 p{
     text-indent: 15px;
