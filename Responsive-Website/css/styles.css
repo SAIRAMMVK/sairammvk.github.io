@@ -1,0 +1,85 @@
+h1{
+    text-align: center;
+    animation-name: moves;
+    animation-duration: 3s;
+    position: relative;
+}
+body{
+    background-color: lightgreen;
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+.loaded{
+    opacity: 1;
+}
+#container{
+   
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px 10px;
+  padding: 20px;
+}
+#container:hover{
+    color: blueviolet;
+}
+#items{
+    background-color: white;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    width: 22vw;
+    text-align: center;
+    justify-content: space-evenly;
+  
+}
+#items:hover{
+    box-shadow: 2px 2px red;
+}
+#title{
+    text-align: center;
+    padding: 15px;
+}
+#content{
+    
+    margin-left: 15px;
+}
+img{
+    height: 12vh;
+    width: 120px;
+    
+}
+@keyframes moves{
+    from{
+        left: 5px;
+    }
+    to{
+        left: 40px;
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    #container{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media only screen and (max-width:768px)
+{
+    #container{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media only screen and (max-width:576px)
+{
+    #container{
+        grid-template-columns: auto auto;
+
+    }
+    #content{
+        display: none;
+    }
+}
+
+
+
