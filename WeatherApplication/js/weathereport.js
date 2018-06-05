@@ -56,7 +56,7 @@ $("#fbtn").click(function (){
         //$('#chart-container').removeClass('results-hide');
         Highcharts.chart('chart-container', {
             chart: {
-                type: 'spline'
+                type: 'bar'
             },
             title: {
                 text: 'Monthly Average Temperature'
