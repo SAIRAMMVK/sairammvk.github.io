@@ -4,3 +4,6 @@
 .content-hide{
     display: none;
 }
+.content-show{
+    display: block;
+}
