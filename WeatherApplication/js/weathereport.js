@@ -8,7 +8,7 @@ $("#btn").click(function ()
     $.ajax({
 
         type:"GET",
-        url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=ef0107f6f8d7d8932a3c0d617ef9b1ec',
+        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=ef0107f6f8d7d8932a3c0d617ef9b1ec',
         success : function(output){
             console.log('in success scenario');
             console.log(output);
@@ -23,9 +23,10 @@ $("#btn").click(function ()
             $("#cwind").html(windspeed);
         },
 
-        failure  : function (err){
+        error  : function (err){
             console.log('in failure scenario');
             console.log(err);
+            alert(err);
 
         }
     });
@@ -39,7 +40,7 @@ $("#fbtn").click(function (){
     $.ajax({
 
         type:"GET",
-        url: 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&APPID=ef0107f6f8d7d8932a3c0d617ef9b1ec',
+        url: 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&APPID=ef0107f6f8d7d8932a3c0d617ef9b1ec',
         success : function(output){
             
             console.log(output);
@@ -49,14 +50,13 @@ $("#fbtn").click(function (){
             console.log(Temperatures);
             plotChart(Temperatures, Dates);
         },
-        failure : function (output){
+        error : function (output){
             console.log(output);
         }
 
     });
 
     function plotChart(tempArr, datesArr) {
-        //$('#chart-container').removeClass('results-hide');
         Highcharts.chart('chart-container', {
             chart: {
                 type: 'column'
@@ -82,7 +82,7 @@ $("#fbtn").click(function (){
                 shared: true
             },
             plotOptions: {
-                spline: {
+                column: {
                     marker: {
                         radius: 4,
                         lineColor: '#A93226',
