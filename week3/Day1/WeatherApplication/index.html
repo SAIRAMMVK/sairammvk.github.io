@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather-Application</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+        
+    <h1 class="text-center" >Weather-Application</h1>
+    <div class="container">
+        <div class="input-group ">
+            <span class="input-group-addon">CityName</span>
+            <input id="cityName" class="form-control" type="text" placeholder="enter city name to get the weather report">
+        </div>
+        <button class="btn-primary" id="btn">Get Report</button>
+        <button class="btn-primary" id="fbtn">ForeCast Graph</button>
+        <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>CityName</th>
+                    <th>Temperature</th>
+                    <th>Pressure</th>
+                    <th>Humidity</th>
+                    <th>Wind Speed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="cname" ></td>
+                    <td id="ctemp" ></td>
+                    <td id="cpres"></td>
+                    <td id="chum"></td>
+                    <td id="cwind"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="forecast-weather">
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/weathereport.js"></script>
+</body>
+</html>
