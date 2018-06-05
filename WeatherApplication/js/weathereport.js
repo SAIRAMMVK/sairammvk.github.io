@@ -4,6 +4,7 @@ $("#btn").click(function ()
         var city = $("#cityName").val();
         //alert(city);
         $(".table").removeClass("content-hide");
+        $("#chart-container").hide();
     $.ajax({
 
         type:"GET",
@@ -33,6 +34,8 @@ $("#btn").click(function ()
 $("#fbtn").click(function (){
 
     var city = $("#cityName").val();
+    $(".table").addClass("content-hide");
+    $("#chart-container").show();
     $.ajax({
 
         type:"GET",
@@ -56,7 +59,7 @@ $("#fbtn").click(function (){
         //$('#chart-container').removeClass('results-hide');
         Highcharts.chart('chart-container', {
             chart: {
-                type: 'bar'
+                type: 'column'
             },
             title: {
                 text: 'Monthly Average Temperature'
@@ -82,7 +85,7 @@ $("#fbtn").click(function (){
                 spline: {
                     marker: {
                         radius: 4,
-                        lineColor: '#666666',
+                        lineColor: '#A93226',
                         lineWidth: 1
                     }
                 }
