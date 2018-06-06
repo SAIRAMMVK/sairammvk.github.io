@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather-Application</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+</head>
+<body>
+        
+    <h1 class="text-center" >Weather-Application</h1>
+    <div class="container">
+        <div class="input-group ">
+            <span class="input-group-addon" >CityName</span>
+            <input id="cityName" onkeyup="check()" onkeypress="checkInput()" class="form-control" type="text" placeholder="enter city name to get the weather report">
+        </div>
+        <button class="btn btn-primary" id="btn" disabled>Get Report</button>
+        <button class="btn btn-primary" id="fbtn" disabled >ForeCast Graph</button>
+        <table class="table table-striped content-hide">
+            <thead>
+                <tr>
+                    <th>CityName</th>
+                    <th>Temperature</th>
+                    <th>Pressure</th>
+                    <th>Humidity</th>
+                    <th>Wind Speed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="cname" ></td>
+                    <td id="ctemp" ></td>
+                    <td id="cpres"></td>
+                    <td id="chum"></td>
+                    <td id="cwind"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="chart-container">
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="js/weathereport.js"></script>
+</body>
+</html>
