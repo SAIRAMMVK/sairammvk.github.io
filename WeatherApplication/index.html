@@ -18,11 +18,11 @@
     <h1 class="text-center" >Weather-Application</h1>
     <div class="container">
         <div class="input-group ">
-            <span class="input-group-addon">CityName</span>
-            <input id="cityName" class="form-control" type="text" placeholder="enter city name to get the weather report">
+            <span class="input-group-addon" >CityName</span>
+            <input id="cityName" onkeypress="checkInput()" class="form-control" type="text" placeholder="enter city name to get the weather report">
         </div>
-        <button class="btn-primary" id="btn">Get Report</button>
-        <button class="btn-primary" id="fbtn">ForeCast Graph</button>
+        <button class="btn btn-primary" id="btn" disabled>Get Report</button>
+        <button class="btn btn-primary" id="fbtn" disabled >ForeCast Graph</button>
         <table class="table table-striped content-hide">
             <thead>
                 <tr>

@@ -1,4 +1,20 @@
 
+function checkInput(){
+    var input = document.getElementById("cityName").value;
+    if(isNaN(input)){
+        $("#btn").prop("disabled",false);
+        $("#fbtn").prop("disabled",false);
+    }
+    else{
+        $("#btn").prop("disabled",true);
+        $("#fbtn").prop("disabled",true);
+    
+    }
+}
+
+
+
+
 $("#btn").click(function ()
     {
         var city = $("#cityName").val();
