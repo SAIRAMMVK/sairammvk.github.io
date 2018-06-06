@@ -14,15 +14,15 @@
     <form>
         <div class="form-group">
             <label for="firstname">First Name (Preferred Name)</label>
-            <input type="text" id="fname">
+            <input type="text" id="fname" required>
         </div>
         <div class="form-group">
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname">
+            <input type="text" id="fullname" required>
         </div>
         <div class="form-group">
             <label for="desgn">Designation</label>
-            <input type="text" id="designation">
+            <input type="text" id="designation" required>
         </div>
         <div class="form-group">
             <label for="ecode">Employee Code</label>
@@ -34,7 +34,7 @@
         </div>
         <div class="form-group">
             <label for="reason">Reasons for Issue</label>
-            <select id="issue">
+            <select id="issue" required>
                 <option>New Employee</option>
                 <option>Lost</option>
                 <option>Defaced</option>
@@ -44,20 +44,21 @@
         </div>
         <div class="form-group">
             <label for="employmentdate">Date Of Employment</label>
-            <input type="date" id="empdate">
+            <input type="date" id="empdate" required>
         </div>
         <div class="form-group">
             <label for="mail">Email Id (Virtusa)</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
         </div>
         <div class="form-group">
             <label for="empnumber">Employee Mobile Number</label>
-            <input type="text" id="mobile">
+            <input type="text" id="mobile" required>
         </div>
         <div class="form-group">
             <label for="empemergency">Emergency Contact Number</label>
             <input type="text" id="emmobile">
         </div>
+        <button class="btn btn-primary btn-lg" type="submit">Apply ID</button>
     </form>
     </div>
 </body>
