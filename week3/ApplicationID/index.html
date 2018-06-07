@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="css/idform.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
     <h2 class="text-right">Virtusa</h2>
     <h3 class="text-center"><u>EMPLOYEE ID CARD FORM</u></h3>
-    <form novalidate >
-        <div class="form-group has-success has-danger" >
+    <form novalidate  >
+        <div class="form-group inner-addon left-addon" >
             <label for="firstname">First Name (Preferred Name)</label>
-            <input type="text" id="fname" class=" form-control form-control-success" >
-            <span id="fnamerr"></span>
+            <i class="fa fa-users"></i>
+            <input type="text" id="fname" class=" form-control" >
+            <span id="fnamerr"> </span>
         </div>
         <div class="form-group">
             <label for="fullname">Full Name</label>
+            <i class="glyphicon glyphicon-user"></i>
             <input type="text" id="fullname" class="form-control" required>
             <span id="fullnamerr"></span>
         </div>
@@ -60,20 +65,24 @@
         </div>
         <div class="form-group">
             <label for="employmentdate">Date Of Employment</label>
+            <i class="glyphicon glyphicon-calendar"></i>
             <input type="date" id="empdate" class= "form-control" required>
         </div>
         <div class="form-group">
             <label for="mail">Email Id (Virtusa)</label>
+            <i class="glyphicon glyphicon-envelope"></i>
             <input type="email" id="email" class="form-control" required>
             <span id="emailerr"></span>
         </div>
         <div class="form-group">
             <label for="empnumber">Employee Mobile Number</label>
+            <i class="material-icons">smartphone</i>
             <input type="text" id="mobile" pattern="[0-9]{10}" class="form-control" required>
             <span id="numerr"></span>
         </div>
         <div class="form-group">
             <label for="empemergency">Emergency Contact Number</label>
+            <i class="material-icons">smartphone</i>
             <input type="text" id="emobile" pattern="[0-9]{10}"  class="form-control" required>
             <span id="emerr"></span>
         </div>

@@ -1,3 +1,9 @@
 span{
     color: red;
 }
+div{
+    position: relative;
+}
+i{
+    position:absolute;
+}
