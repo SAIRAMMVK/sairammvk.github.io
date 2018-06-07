@@ -13,30 +13,30 @@
     <div class="container">
     <h2 class="text-right">Virtusa</h2>
     <h3 class="text-center"><u>EMPLOYEE ID CARD FORM</u></h3>
-    <form novalidate>
-        <div class="form-group">
+    <form novalidate >
+        <div class="form-group has-success has-danger" >
             <label for="firstname">First Name (Preferred Name)</label>
-            <input type="text" id="fname">
+            <input type="text" id="fname" class=" form-control form-control-success" >
             <span id="fnamerr"></span>
         </div>
         <div class="form-group">
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" required>
+            <input type="text" id="fullname" class="form-control" required>
             <span id="fullnamerr"></span>
         </div>
         <div class="form-group">
             <label for="desgn">Designation</label>
-            <input type="text" id="designation" required>
+            <input type="text" id="designation" class="form-control" required>
             <span id="derr"></span>
         </div>
         <div class="form-group">
             <label for="ecode">Employee Code</label>
-            <input type="text" id="empcode" required>
+            <input type="text" id="empcode" class="form-control" required>
             <span id="ecodeerr"></span>
         </div>
         <div class="form-group">
             <label for="bloodgroup">Blood Group</label>
-            <select id="bggroup">
+            <select id="bggroup" class="form-control">
                 <option>AB</option>
                 <option>A+</option>
                 <option>B+</option>
@@ -50,7 +50,7 @@
         </div>
         <div class="form-group">
             <label for="reason">Reasons for Issue</label>
-            <select id="issue" required>
+            <select id="issue" class="form-control" required>
                 <option>New Employee</option>
                 <option>Lost</option>
                 <option>Defaced</option>
@@ -60,24 +60,24 @@
         </div>
         <div class="form-group">
             <label for="employmentdate">Date Of Employment</label>
-            <input type="date" id="empdate" required>
+            <input type="date" id="empdate" class= "form-control" required>
         </div>
         <div class="form-group">
             <label for="mail">Email Id (Virtusa)</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" class="form-control" required>
             <span id="emailerr"></span>
         </div>
         <div class="form-group">
             <label for="empnumber">Employee Mobile Number</label>
-            <input type="text" id="mobile" pattern="[0-9]{10}" required>
+            <input type="text" id="mobile" pattern="[0-9]{10}" class="form-control" required>
             <span id="numerr"></span>
         </div>
         <div class="form-group">
             <label for="empemergency">Emergency Contact Number</label>
-            <input type="text" id="emobile" pattern="[0-9]{10}" required>
+            <input type="text" id="emobile" pattern="[0-9]{10}"  class="form-control" required>
             <span id="emerr"></span>
         </div>
-        <button type="button" onclick="validateDetails()">Apply ID</button>
+        <button type="button" class="btn btn-success btn-lg" onclick="validateDetails()">Apply ID</button>
     </form>
     </div>
     <script src="js/idform.js"></script>
