@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>APPLICATION</title>
+    <link rel="stylesheet" href="css/idform.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -12,22 +13,26 @@
     <div class="container">
     <h2 class="text-right">Virtusa</h2>
     <h3 class="text-center"><u>EMPLOYEE ID CARD FORM</u></h3>
-    <form>
+    <form novalidate>
         <div class="form-group">
             <label for="firstname">First Name (Preferred Name)</label>
-            <input type="text" id="fname" pattern="[a-zA-Z]{15}" required>
+            <input type="text" id="fname">
+            <span id="fnamerr"></span>
         </div>
         <div class="form-group">
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" required>
+            <span id="fullnamerr"></span>
         </div>
         <div class="form-group">
             <label for="desgn">Designation</label>
             <input type="text" id="designation" required>
+            <span id="derr"></span>
         </div>
         <div class="form-group">
             <label for="ecode">Employee Code</label>
-            <input type="text" id="empcode" pattern="[0-9]{7}" required>
+            <input type="text" id="empcode" required>
+            <span id="ecodeerr"></span>
         </div>
         <div class="form-group">
             <label for="bloodgroup">Blood Group</label>
@@ -60,16 +65,19 @@
         <div class="form-group">
             <label for="mail">Email Id (Virtusa)</label>
             <input type="email" id="email" required>
+            <span id="emailerr"></span>
         </div>
         <div class="form-group">
             <label for="empnumber">Employee Mobile Number</label>
             <input type="text" id="mobile" pattern="[0-9]{10}" required>
+            <span id="numerr"></span>
         </div>
         <div class="form-group">
             <label for="empemergency">Emergency Contact Number</label>
-            <input type="text" id="emmobile" pattern="[0-9]{10}" required>
+            <input type="text" id="emobile" pattern="[0-9]{10}" required>
+            <span id="emerr"></span>
         </div>
-        <button class="btn btn-primary btn-lg"  onsubmit="validate()" type="submit">Apply ID</button>
+        <button type="button" onclick="validateDetails()">Apply ID</button>
     </form>
     </div>
     <script src="js/idform.js"></script>
