@@ -1,0 +1,23 @@
+img{
+    height: 25%;
+    width:25%;
+}
+.container{
+    margin-top: 5%;
+   
+}
+.col-sm-4:hover{
+    box-shadow: 2px 2px lightcoral;
+}
+.col-sm-4{
+    background-color: white;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 2px white;
+    border-radius: 5px;
+    height: 25vh;
+    width: 22vw;
+    padding: 16px;
+    margin:10px;
+
+}

@@ -1,0 +1,125 @@
+body{
+    /* background-image: url(../images/backgrnd.jpg); */
+   background-color: lightyellow;
+   color: chartreuse;
+    background-repeat: no-repeat;
+    background-size: cover;
+     font-style: italic;
+     font-size: 20px;
+    
+    }
+    span{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        margin-left: 20px;
+        
+    }
+    div .social-links{
+        align-items: center;
+    }
+    a:hover{
+        color:red;
+    }
+    button{
+        margin-left: 20px;
+        color: blue;
+        text-decoration: none;
+        border: none;
+        /*background-color: white;*/
+    }
+    .intro{
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: justify;
+        text-indent: 55px;
+        margin-left: 25%;
+        margin-right: 25%;   
+        margin-top: 5%;
+    }
+    .quotediv{
+         margin-left: 25%;
+        margin-right: 25%;   
+        color: red;
+        text-align: justify;
+        height:7%;
+    }
+    #profile{
+        float: right;
+        height: 200px;
+        width: 140px;
+        margin-top: 120px;
+        margin-right: 100px;
+    }
+    #facebook{
+        width: 80px;
+        height: 80px;
+    }
+    #github{
+        width: 120px;
+        height: 77px;
+    }
+    p{
+        text-indent: 15px;
+    }
+    /* footer{
+        margin-bottom: 80px;
+    } */
+    .hyperlinks{
+        margin-top:2%; 
+        
+    }
+    
+    h3{
+       margin-left: 40% ;
+    color: orchid;
+    }
+    img{
+        height: 100px;
+        widows: 50px;
+    }
+    tr{
+        
+        padding-left: 30px;
+          
+    }
+    td{
+        padding: 20px;
+    }
+    .hint{
+     color: red; 
+     margin-left: 30%;  
+    
+    }
+    ul{
+        list-style-type: none;
+                
+    }
+    h3 span{
+        border: 4px dashed white;
+        padding : 12px;
+        float: center;
+    }
+    table selected
+    {
+        color: red;
+    }
+    .channels-facebook{
+        float: left;
+        margin-left: 30%;
+        border: 2px solid lightcoral;
+        background-color: lightblue;
+    }
+    .channels-youtube
+    {
+        float: right;
+        margin-right: 30%;
+        border: 2px solid lightcoral;
+        background-color: lightblue;
+    }
+    h2{
+        text-align: center;
+    }
